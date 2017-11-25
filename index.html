@@ -3,7 +3,236 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Морда»</title>
+    <link rel="stylesheet" href="index.css" type="text/css">
 </head>
 <body>
+    <header class="who-are-you">
+        <div class="location">
+            <span>
+                <img src="icons/location.png" class="location__icon" alt="Местоположение:">Екатеринбург
+            </span>
+        </div>
+        <div class="view-setting">
+            <label for="widget-number-0">Настройка</label>
+        </div>
+        <div class="log-in">
+            <div><span>Логин</span></div>
+            <div><span>Сообщения 1347</span></div>
+        </div>
+    </header>
+    <main>
+        <article class="news">
+            <input type="radio" id="world-news" name="news-source" checked>
+            <label for="world-news">Сейчас в СМИ</label>
+            <input type="radio" id="local-news" name="news-source">
+            <label for="local-news">В Екатеринбурге</label>
+            <span class="date-now">21 ноября, вторник 19:20</span>
+            <section class="news__world">
+                <ul>
+                    <li>Как «плачущий» в бундестаге ямальский мальчик взорвал Россию</li>
+                    <li>В Белоруссии показали кадры допроса обвиняемого в шпионаже украинца</li>
+                    <li>Патриарх Кирилл призвал общество не допустить «окончания истории»</li>
+                    <li>ВМС Аргентины изучают зафиксированные в зоне поиска подлодки шумы</li>
+                    <li>Меркель выступила за проведение новых выборов в бундестаг</li>
+                </ul>
+            </section>
+            <section class="news__local">
+                <ul>
+                    <li>Свердловские эсеры получили нового руководителя — депутата и банкрота</li>
+                    <li>В Екатеринбурге на площади 1905 года могут перенести остановки</li>
+                    <li>Свердловская область получит 16 миллиардов на ремонт дорог</li>
+                    <li>Рабочую ситуацию вокруг ремонта проспекта Ленина «раздули до слона»</li>
+                    <li>На Среднем Урале утилизируют меньше половины образующихся отходов</li>
+                </ul>
+            </section>
+            <aside class="exchange-rates">
+                <span class="exchange-rates__currency">USD ЦБ</span>
+                <span class="exchange-rates__value">59,27</span>
+                <span class="exchange-rates__increase">+0,28</span>
+                <span class="exchange-rates__currency">EUR ЦБ</span>
+                <span class="exchange-rates__value">69,67</span>
+                <span class="exchange-rates__increase">+0,01</span>
+                <span class="exchange-rates__currency">Нефть</span>
+                <span class="exchange-rates__value">62,13</span>
+                <span class="exchange-rates__increase">−0,97%</span>
+            </aside>
+        </article>
+        <aside class="advert-small">
+            <figure class="advert-small__appearance">
+                <img src="advertisement/small.png" class="advert-small__picture" alt="Реклама">
+                <figcaption class="advert-small__caption">
+                    <div class="advert-small__caption_primary">Пора в отпуск</div>
+                    <div class="advert-small__caption_secondary">Яндекс сам предложит,<br>куда слетать</div>
+                </figcaption>
+            </figure>
+        </aside>
+        <div class="ya-label"><img src="icons/yalabel.png" alt="Яндекс"></div>
+        <div class="ya-main">
+            <nav class="ya-services">
+                <span>Видео</span>
+                <span>Картинки</span>
+                <span>Новости</span>
+                <span>Карты</span>
+                <span>Маркет</span>
+                <span>Переводчик</span>
+                <span>Музыка</span>
+                <span>ещё</span>
+            </nav>
+            <article class="ya-find">
+                <div class="ya-find__input">
+                    <input type="text">
+                    <button>Найти</button>
+                    <div></div>
+                </div>
+                <div>
+                    Найдется все. Например, <span>что такое дагерротип</span>
+                </div>
+            </article>
+        </div>
+        <aside class="advert-wide">
+            <img src="advertisement/wide.png" alt="Реклама">
+        </aside>
+        <input type="checkbox" id="widget-number-0">
+        <div class="drop-down-setting">
+            <div></div>
+            <label for="widget-number-1">Посещаемое</label>
+            <label for="widget-number-2">Лучшие анекдоты</label>
+            <label for="widget-number-3">Телепрограмма</label>
+            <label for="widget-number-4">Автомобильные новости</label>
+            <label for="widget-number-5">Погода</label>
+            <label for="widget-number-6">Пробки</label>
+            <label for="widget-number-7">Карта Екатеринбурга</label>
+            <label for="widget-number-8">Афиша</label>
+        </div>
+        <div class="compliments">
+            <article class="compliment-part-1">
+                <input type="checkbox" id="widget-number-1" checked>
+                <div class="widget">
+                    <h3 class="widget__header"><span>Посещаемое</span></h3>
+                    <div class="widget__content content-visited">
+                    <div><span>Маркет</span> — СВЧ-печи Samsung</div>
+                    <div><span>Авто.ру</span> — новый мощный Туссан</div>
+                    <div><span>Недвижимость</span> — трёшки с ипотекой</div>
+                    <div><span>Работа</span> — инженером</div>
+                    <div><span>Картинки</span> — интерьер комнаты</div>
+                    <div><span>Путешествия</span> — туры в Испанию</div>
+                    <div><span>Здоровье</span> — врач на связи</div>
+                    </div>
+                </div>
+                <input type="checkbox" id="widget-number-2" checked>
+                <div class="widget">
+                    <h3 class="widget__header"><span>Лучшие анекдоты</span></h3>
+                    <div class="widget__content content-jokes">
+                        <div class="one-joke">
+                            <input type="radio" name="jokes" id="joke-1" checked>
+                            <p>Lil Peep устроил совместный тур с Горшком по Вене</p>
+                            <label for="joke-2">Показать еще</label>
+                        </div>
+                        <div class="one-joke">
+                            <input type="radio" name="jokes" id="joke-2">
+                            <p>Попал еврей в антимир, прошел по антиулице в свой
+                                антимир, заходит в свой антидом, а там его антижена
+                                спит с антисемитом</p>
+                            <label for="joke-3">Показать еще</label>
+                        </div>
+                        <div class="one-joke">
+                            <input type="radio" name="jokes" id="joke-3">
+                            <p>Жил-был браконьер. Повстречал он однажды в лесу цыган.
+                                С тех самых пор его звали браером.</p>
+                            <label for="joke-4">Показать еще</label>
+                        </div>
+                        <div class="one-joke">
+                            <input type="radio" name="jokes" id="joke-4">
+                            <p>Приходят 2 революционера в столовую. Ставят еду на
+                                подносы, один другому говорит:<br>-захвати "зимний"</p>
+                            <label for="joke-5">Показать еще</label>
+                        </div>
+                        <div class="one-joke">
+                            <input type="radio" name="jokes" id="joke-5">
+                            <p>1920 год, урок биологии в сельской школе. Учитель диктует задачу:
+                            "От скрещивания жёлтой и красной вишни, произошло 1465 жёлтых вишен,
+                            найдите количество вишен которые у вас заберут на продразверстку"</p>
+                            <label for="joke-1">Показать еще</label>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="compliment-part-2">
+                <input type="checkbox" id="widget-number-3" checked>
+                <div class="widget">
+                    <h3 class="widget__header">
+                        <span>Телепрограмма</span>
+                        <img src="icons/tvonline.png" alt="В том числе, ТВ онлайн">
+                    </h3>
+                    <div class="widget__content content-tvshow">
+                        <div><span>09:50 Жить здорово!</span>Первый</div>
+                        <div><span>09:55 О самом главном</span>Россия 1</div>
+                        <div><span>10:00 Квадратный метр</span>Матч!</div>
+                        <div><span>10:00 Сегодня</span>НТВ</div>
+                        <div><span>10:00 Слепая</span>ТВ-3</div>
+                        <div><span>10:00 Орел и решка</span>Пятница</div>
+                    </div>
+                </div>
+                <input type="checkbox" id="widget-number-4" checked>
+                <div class="widget">
+                    <h3 class="widget__header"><span>Автомобильные новости</span></h3>
+                    <div class="widget__content content-autonews">
+                        <div></div>
+                        <div></div>
+                        <p>С начала 2017 года автопром Петербурга вырос почти на четверть</p>
+                        <p>Автоэксперты назвали лучший женский автомобиль 2017 года</p>
+                        <p>Стартовало предсерийное производство автомобилей проекта «Кортеж»</p>
+                        <p>Ростовская БСМП арендует машины скорой помощи на 212,2 млн рублей</p>
+                        <p>Aston Martin Пола Маккартни выставлен на торги Bonhams</p>
+                        <p>Эксперты: хакеры могут убить миллионы людей через взлом автомобилей</p>
+                        <p>Volvo поставит Uber 24 000 беспилотных кроссоверов XC90</p>
+                        <p>Департамент соцпитания Казани нуждается в машине за 2,3 млн рублей</p>
+                        <p>В октябре российский рынок грузовиков вырос на 60%</p>
+                        <p>Lincoln представил обновленный кроссовер Lincoln MKC 2019</p>
+                        <p>Компания Hennessey показала дизайн Venom F5</p>
+                    </div>
+                </div>
+            </article>
+            <article class="compliment-part-3">
+                <input type="checkbox" id="widget-number-5" checked>
+                <div class="widget">
+                    <h3 class="widget__header">
+                        <span>Погода</span>
+                        <img src="icons/weather.png" alt="Сегодня ясно">
+                    </h3>
+                    <div class="widget__content content-weather">Вечер -5, Ночь -7</div>
+                </div>
+                <input type="checkbox" id="widget-number-6" checked>
+                <div class="widget">
+                    <h3 class="widget__header">
+                        <span>Пробки</span>
+                        <img src="icons/traffic-jams.png" alt="Уровень загруженности: желтый">
+                    </h3>
+                    <div class="widget__content  content-traffic">Местами затруднения</div>
+                </div>
+                <input type="checkbox" id="widget-number-7" checked>
+                <div class="widget">
+                    <h3 class="widget__header"><span>Карта Екатеринбурга</span></h3>
+                    <div class="widget__content content-map">
+                        <span>Такси</span>
+                        <span>Расписание</span>
+                        <span>Междугородние автобусы</span>
+                    </div>
+                </div>
+                <input type="checkbox" id="widget-number-8" checked>
+                <div class="widget">
+                    <h3 class="widget__header"><span>Афиша</span></h3>
+                    <div class="widget__content content-affiche">
+                        <div><span>Снеговик</span>премьера в чт</div>
+                        <div><span>Тор: Рагнарёк</span>фэнтези</div>
+                        <div><span>Лига справедливости</span>фантастика</div>
+                        <div><span>Последний богатырь</span>приключения</div>
+                        <div><span>Убийство в Восточном…</span>драма</div>
+                        <div>Концерты — Mgzavrebi</div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </main>
 </body>
 </html>
