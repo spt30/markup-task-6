@@ -130,7 +130,7 @@ main
     grid-area: 1 / 2 / 2 / 4;
 }
 
-.advert-small
+.poster-small
 {
     grid-area: 1 / 4 / 2 / 5;
 }
@@ -207,7 +207,7 @@ main
     margin-right: 30px;
 }
 
-.advert-small__caption_primary
+.poster-small__caption_primary
 {
     font-size: 1.5em;
     font-weight: 500;
@@ -215,7 +215,7 @@ main
     opacity: 1;
 }
 
-.advert-small__caption div:first-child:hover
+.poster-small__caption div:first-child:hover
 {
     color: red;
     cursor: pointer;
@@ -306,12 +306,12 @@ main
 }
 /*--------------------row_3--------------------*/
 
-.advert-wide
+.poster-wide
 {
     grid-area: 3 / 2 / 4 / 5;
 }
 
-.advert-wide > img
+.poster-wide > img
 {
     width: 70%;
 }
