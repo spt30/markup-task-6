@@ -29,7 +29,7 @@ body
 }
 
 .location :hover,
-.view-setting > label:hover,
+.view-setting:hover,
 .log-in > div > :hover
 {
     color: red;
@@ -105,12 +105,13 @@ input[id^='widget-number-']:not(:checked) + div
     border-radius: 5px;
 }
 
-.log-in > div
+.log-in > span
 {
+    display: block;
     margin: 1em;
 }
 
-.log-in > div:first-child::first-letter
+.log-in > span:first-child::first-letter
 {
     color: red;
 }
@@ -287,8 +288,9 @@ main
     font-size: 1.3em;
 }
 
-.ya-find__input > div
+.ya-find__input::after
 {
+    content: '';
     position: relative;
     border: 20px solid transparent;
     border-left: 12px solid #ffdd61;
@@ -333,14 +335,12 @@ main
 .compliment-part-2
 {
     display: table-cell;
-    grid-area: 4 / 3 / 5 / 4;
     margin: 0 20px;
 }
 
 .compliment-part-3
 {
     display: table-cell;
-    grid-area: 4 / 4 / 5 / 5;
     margin-left: 10px;
 }
 
